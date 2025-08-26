@@ -1,0 +1,176 @@
+body{
+    /*background-image: url(imagenes/Fondo\ de\ Pantalla/fondo\ de\ pantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: relative; 
+    padding: 3em; 
+    min-height: 100vh;*/
+
+    background-image: url(imagenes/Fondo\ de\ Pantalla/fondo\ de\ pantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    
+
+.fondo{
+
+    width: 100%;
+    height: 100%;
+    /*background: linear-gradient(rgb(184, 189, 184), white);
+    opacity: 0.4;*/
+}
+}
+
+
+
+ .Titulo {
+   /* background-color: rgb(212, 197, 197);    */
+    color: white;
+    font-size: 50px;  
+    background: center;
+    /*width: 60%; */  
+    margin-left: 800px;
+    text-shadow: 
+    -4px -4px 0 black,
+    -4px 4px 0 black,
+    4px 4px 0 black,
+    4px -4px 0 black;
+    /*border-radius: 0%;*/
+    
+    
+}
+
+.Subtitulo {
+    /*background-color: rgb(216, 194, 194);*/
+    color: white;
+    font-size: 35px;
+    width: 60%;
+    margin-left: 680px;
+    text-shadow: 
+    -4px -4px 0 black,
+    -4px 4px 0 black,
+    4px 4px 0 black,
+    4px -4px 0 black;
+
+}
+
+.menu {
+    display: flex;
+     align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 30px;
+}
+
+/*nav {
+width: 100%;
+height: 150px;
+position: relative;
+}
+
+nav ul {
+    width: 40%;
+    height: 100px;
+     display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+   
+    font-size: 25px;
+    display: block;
+    list-style: none; 
+    
+
+}*/
+
+
+/*.principal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    /*background-color: red;*/
+   /* justify-content:space-around;
+    padding: 130px 20px 20px 20px;
+}*/
+
+/*.secundaria {
+    color: blue;
+    font-size: 35PX;
+    width: 30%;
+    height: 300px;    
+    background-color: aqua;
+
+}*/
+
+/*.secundaria1 {
+    color: blue;
+    font-size: 35PX;
+    width: 30%;
+    height: 300px;    
+    background-color: aqua;
+}*/
+
+nav ul li a{
+    display: block;
+    padding: 10px 20px;
+    background-color:#000;
+    color: white;
+    text-decoration: none; /*Desaparece el subrrayado*/
+    margin: 10px;
+    border-radius: 30%;
+    
+   
+    
+}
+
+nav li a:hover{
+
+    background-color: #af1919;
+}
+
+nav > ul li {
+
+    float: left; /*Aquí se colocan los menues uno al lado del otro*/
+    
+
+}
+nav  ul li ul {    
+    display: none;/*Aquí desaparecen sub menues*/
+    position: absolute;/*para mantener el tamaño del menú*/
+    min-width: 130px;
+    gap: 0;
+}
+
+
+nav ul li:hover > ul{
+
+    display: block;
+}
+ .Pie {
+    font-size: 30px;
+   
+    color: red;
+    text-align: center;
+
+ }
+footer {
+     width: 100%;
+    height: 15%;
+    background-color: yellowgreen;
+    bottom: 0;
+    position: absolute;
+    padding: 1em;
+
+}
+    
+    
+.logopie {
+width: 40%;
+}
+
+
+
+
+
+
