@@ -1,50 +1,71 @@
-body{
-    /*background-image: url(imagenes/Fondo\ de\ Pantalla/fondo\ de\ pantalla.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;  
-    position: relative; 
-    padding: 3em; 
-    min-height: 100vh;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{  
+    width: 100%;
+    height: 1250px;  
+    position: relative;
+   font-family:  sans-serif;
 
     background-image: url(imagenes/Fondo\ de\ Pantalla/fondo\ de\ pantalla.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    
-
-.fondo{
-
-    width: 100%;
-    height: 100%;
-    /*background: linear-gradient(rgb(184, 189, 184), white);
-    opacity: 0.4;*/
 }
+    .body-quienes{  
+    width: 100%;
+    height: 1900px;  
+    position: relative;
+   font-family:  sans-serif;
+
+    background-image: url(imagenes/Fondo\ de\ Pantalla/fondo\ de\ pantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.body-contactanos{  
+    width: 100%;
+    height: 1700px;  
+    position: relative;
+   font-family:  sans-serif;
+
+    background-image: url(imagenes/Fondo\ de\ Pantalla/fondo\ de\ pantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
 
 
  .Titulo {
-   /* background-color: rgb(212, 197, 197);    */
+   
     color: white;
     font-size: 50px;  
     background: center;
-    /*width: 60%; */  
-    margin-left: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
     text-shadow: 
     -4px -4px 0 black,
     -4px 4px 0 black,
     4px 4px 0 black,
     4px -4px 0 black;
-    /*border-radius: 0%;*/
+    
     
     
 }
 
 .Subtitulo {
-    /*background-color: rgb(216, 194, 194);*/
+    
     color: white;
     font-size: 35px;
-    width: 60%;
-    margin-left: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
     text-shadow: 
     -4px -4px 0 black,
     -4px 4px 0 black,
@@ -53,7 +74,19 @@ body{
 
 }
 
+nav{
+    height: 60%;
+    width: 100%;
+
+}
+
+.comHeader{
+           height: 200px;
+           width: 100%;
+}
+
 .menu {
+    height: 150%;
     display: flex;
      align-items: center;
     justify-content: center;
@@ -61,81 +94,57 @@ body{
     font-size: 30px;
 }
 
-/*nav {
-width: 100%;
-height: 150px;
-position: relative;
-}
 
-nav ul {
+
+*nav ul {
     width: 40%;
     height: 100px;
      display: flex;
-    flex-direction: row;
+    
 }
 
-nav ul li {
+nav ul li {/*Aquí le damos estilo al submenú*/
    
-    font-size: 25px;
+    font-size: 30px;
     display: block;
     list-style: none; 
-    
+    align-items: center;
+     
 
-}*/
+}
+ 
 
 
-/*.principal {
-    display: flex;
-    flex-direction: row;
+header {
+
     width: 100%;
-    height: 500px;
-    /*background-color: red;*/
-   /* justify-content:space-around;
-    padding: 130px 20px 20px 20px;
-}*/
+    height: 40%;
+    
+}
 
-/*.secundaria {
-    color: blue;
-    font-size: 35PX;
-    width: 30%;
-    height: 300px;    
-    background-color: aqua;
-
-}*/
-
-/*.secundaria1 {
-    color: blue;
-    font-size: 35PX;
-    width: 30%;
-    height: 300px;    
-    background-color: aqua;
-}*/
-
-nav ul li a{
+.menu  li a {
     display: block;
     padding: 10px 20px;
-    background-color:#000;
+    background-color:rgb(33, 39, 22);
     color: white;
     text-decoration: none; /*Desaparece el subrrayado*/
     margin: 10px;
-    border-radius: 30%;
+    border-radius: 10px;
+    list-style: none;
     
-   
     
 }
 
 nav li a:hover{
 
     background-color: #af1919;
-}
-
-nav > ul li {
-
-    float: left; /*Aquí se colocan los menues uno al lado del otro*/
     
 
 }
-nav  ul li ul {    
+
+
+nav  ul li ul { 
+    float:left;   
     display: none;/*Aquí desaparecen sub menues*/
     position: absolute;/*para mantener el tamaño del menú*/
     min-width: 130px;
@@ -143,34 +152,340 @@ nav  ul li ul {
 }
 
 
-nav ul li:hover > ul{
+nav ul li:hover > ul{/*Despliegue del sub menú*/
 
     display: block;
 }
- .Pie {
-    font-size: 30px;
-   
-    color: red;
-    text-align: center;
 
- }
+/*AQUÍ TRABAJAMOS LA SUBCARPETA DE LA PRESENTCIÓN DE LA EMPRESA*/
+
+
+
+/*AQUÍ DAMOS ESTILO AL TÍTULO DE LA EMPRESA*/
+
+.historia {
+     width: 100%;
+     height: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+    background-color:aqua;
+    padding-top: 30px;
+}
+
+/*AQUÍ DAMOS ESTILO AL PÁRRAFO CORRESPONDIENTE A LA HISTORIA DE LA EMPRESA*/
+.resumen{
+    width: 80%;
+    color: brown;
+    height: 64%;
+    font-size: 25px;
+    margin-top: 30px;    
+    text-align: justify;
+}
+
+/**AQUÍ DAMOS ESTILO A LAS FOTOS DE LOS FUNDADORES*/
+
+.fotos {
+    width: 100%;
+    height: 30%;
+    background-color:aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.andrea{ /*contenedor de estilos de Andrea Guevara en Quienes somos*/
+
+    width: 10%;
+    height: 100%;
+    background-color: aqua;    
+}
+
+.foto-andrea{ /*Estilo a foto*/
+
+    width: 100%;
+    height: 100%;
+    margin-left: 180px;
+    border-radius: 180%;
+}
+
+.datos-andrea{ /**Estila a datos*/
+    width: 20%;
+    height: 100%;
+    vertical-align: auto;
+    font-size: 25px;
+    color:brown;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.gabriel{
+    width: 10%;
+    height: 100%;
+    background-color: aqua;
+    padding: 10PX 10;
+    
+}
+
+.foto-gabriel {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 180%;
+    margin-right: 800px;
+}
+
+.datos-gabriel{
+    width: 20%;
+    height: 100%;
+    vertical-align: auto;
+    font-size: 25px;
+    color:brown;
+    margin-top: 20px;
+    margin-right:70px;    
+    
+}
+
+
+
+.cliente{
+
+    width: 80%;
+    height: 40px;
+    background-color: aqua;
+}
+
+.main-quienes{ /*Aquí damos estilo a contenedor de hstoria de la empresa*/
+
+    height: 43%;
+    width: 100%;
+    background-color: black;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+
+
+.datos-usuarios {/*Aquí damos estilo al div de datos de usuario en contactanos*/
+    
+    height: 43%;
+    width: 100%;       
+    background-color: aqua;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;      
+
+}
+
+.datos-usuario-section{/*Aquí damos estilo a Section de datos de usuario en contactanos*/
+
+    width: 60%;
+    height: 60%;
+    margin-top: 30px;
+    margin-left: 600px;
+}
+
+#form-datos{/*Aquí damos estilo a formulario de datos*/
+
+    width: 80%;
+    height: 80%;
+    
+}
+
+#asunto{/*Aquí se le da estilo a section del contenedor de datos de usuarios de contactanos*/
+    
+width: 48%;
+height: 20%;
+margin-left: 30PX;
+cursor: pointer;
+border-radius: 8px;
+    font-size: 25px;
+margin-bottom: 15px;
+    
+}
+
+
+
+#nombre { /*Aquí le damos estilo a la casilla de nombre en datos del usuario*/
+    width: 48%;
+    height: 15%;
+    margin-bottom: 15px;
+    font-size: 25px;
+    margin-left: 20PX;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+#apellido { /*Aquí le damos estilo a la casilla de apellido en datos del usuario*/
+    width: 48%;
+    height: 15%;
+    margin-bottom: 15px;
+    font-size: 25px;
+    margin-left: 20PX;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+#email { /*Aquí le damos estilo a la casilla de email en datos del usuario*/
+    
+   width: 48%;
+    height: 15%;
+    margin-bottom: 15px;
+    font-size: 25px;
+    margin-left: 70PX;
+    cursor: pointer;
+    border-radius: 8px;
+    
+
+}
+
+
+
+
+#consulta { /*Aquí le damos estilo a la casilla de consulta en datos del usuario*/
+    
+    margin-bottom: 15px;
+    font-size: 33px;
+    margin-left: 10PX;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+    
+    
+}
+
+#enviar {
+    width: 100px;
+    height: 15%;
+    margin-bottom: 15px;
+    font-size: 25px;
+    margin-left: 370px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+.label-contactanos {
+
+    font-size: 30px;
+}
+
+
+
+
+
+
 footer {
      width: 100%;
-    height: 15%;
-    background-color: yellowgreen;
+    height: 19%;
+    background-color: rgb(175, 216, 93);
     bottom: 0;
-    position: absolute;
-    padding: 1em;
+    position: absolute; /*Aquí posicionamos el footer al pié*/
+    /*padding: 1em;*/
+    
+    
 
 }
     
+   footer  h3{ /*Aquí le damos tamaño y color a los h3 del footer*/
+    text-align: center;
+    font-size: 50px;
+    padding: 25px 010;
+    color: white;        
+    text-shadow: 
+    -4px -4px 0 black,
+    -4px 4px 0 black,
+    4px 4px 0 black,
+    4px -4px 0 black
+
     
-.logopie {
-width: 40%;
+
+   } 
+
+   footer p{ /*Aqui le damos tamaño a los párrafos del footer*/
+    text-align: center;
+    /*padding: 10 px 0;*/
+    font-size: 25px;
+   }
+
+.contacto{ /*tamaño del contenedor de contactos*/
+    width: 50%;
+     margin-top: 30px;
+     
+}
+   
+
+
+
+
+.footer-2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    right: 20px;
+    bottom: 20px;
+    height: 80px;     
+
+
+}
+.redes-sociales{/*tamaño al contenedor de redes-sociales y margen superior*/
+    width: 33%;
+    margin-top: 30px;  
+    margin-left: 300px;  
 }
 
+.imaglogo{/*tamaño al contenedor de imagen de logo y margen superior*/
 
+    width: 150px;
+    margin-top: 30px;
 
+}
 
+.redes {/*tamaño al contenedor de redes y margen superior*/
+    width: 70px;
+    margin-right: 40px ;
+    margin-top: 20px;
+    
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
 
+.botonInicio:hover{
+    
+    background-color: #af1919;
+}
+
+.pie{
+    
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+}
+@media(min-width: 800px){
+    footer .footer-1{
+        display: flex;
+    }
+    footer .footer-1 div{
+        flex-grow: 1;
+    }
+}
 
